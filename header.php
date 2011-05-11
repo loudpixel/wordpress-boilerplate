@@ -8,7 +8,7 @@
 	<!-- iOS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/stylesheets/screen.css" media="screen" />
 	<!--[if lt IE 9]>
 	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -16,7 +16,4 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<nav>
-		<?php wp_nav_menu(array('container' => '')); ?>
-	</nav>
-	
+	<?php wp_nav_menu(array('container' => 'nav')); ?>	
